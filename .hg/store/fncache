@@ -1,0 +1,15 @@
+data/crc.c.i
+data/crc.h.i
+data/main.c.i
+data/main.h.i
+data/nmea.c.i
+data/nmea.h.i
+data/radio.c.i
+data/radio.h.i
+data/spi.c.i
+data/spi.h.i
+data/timer.c.i
+data/timer.h.i
+data/uart.c.i
+data/uart.h.i
+data/рг v0.03.doc.i
