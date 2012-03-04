@@ -29,8 +29,7 @@ void main (void)
         SPIInit();
         Timer_Init();
         Radio_Start();
-        // поехали...
-        __enable_interrupt ();
+        // поехали... :();
 
 	while (1)
         {
@@ -38,6 +37,7 @@ void main (void)
             {LED_On();}
           else
             {LED_Off();}
-
+	
         }
+	// приехали!
 }

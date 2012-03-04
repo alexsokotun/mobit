@@ -146,15 +146,11 @@ void Radio_Start (void)
 // Последовательная запись в регистры TR24
 void TR24_Send_Regs (const u08 * seq_, char len_)
 {
-  while (len_)
-  {
-    if (len_ & 3)
-    {
+  while (len_) {
+     if (len_ & 3) {
         SPDR = *seq_;
         while(!(SPSR & (1<<SPIF))); // Wait for transmission complete
-    }
-    else
-    {
+    } else {
       LAN_SPI_SET_SS_OFF();
         if (*seq_)
           RESET_PKT_INTERRUPT_FLAG;
